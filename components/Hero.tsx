@@ -3,7 +3,7 @@ import { GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
 
 export function Hero() {
   return (
-    <section id="top" className="mx-auto max-w-5xl px-4 pb-20 pt-24 sm:px-6">
+    <section id="top" className="mx-auto max-w-5xl px-4 pb-10 pt-14 sm:pb-20 sm:pt-24 sm:px-6">
       <p className="text-base font-semibold text-indigo-600">{site.title}</p>
       <h1 className="mt-3 text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl">
         {site.name}

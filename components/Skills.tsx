@@ -60,7 +60,7 @@ const skillGroups: { title: string; skills: string[] }[] = [
 export function Skills() {
   return (
     <section id="skills">
-      <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
+      <div className="mx-auto max-w-5xl px-4 py-12 sm:py-20 sm:px-6">
         <h2 className="text-3xl font-semibold tracking-tight text-zinc-900">
           Skills
         </h2>

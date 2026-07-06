@@ -4,7 +4,7 @@ import { GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
 export function Contact() {
   return (
     <section id="contact" className="border-t border-zinc-100 bg-zinc-50/60">
-      <div className="mx-auto max-w-5xl px-4 py-20 text-center sm:px-6">
+      <div className="mx-auto max-w-5xl px-4 py-12 text-center sm:py-20 sm:px-6">
         <h2 className="text-3xl font-semibold tracking-tight text-zinc-900">
           Get in touch
         </h2>
