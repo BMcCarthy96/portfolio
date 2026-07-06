@@ -78,13 +78,19 @@ export const featuredProjects: Project[] = [
       "pytest",
     ],
     links: [
-      // TODO: add { label: "Live Demo", href: "<Render URL>", primary: true } once deployed
+      {
+        label: "Live Demo",
+        href: "https://stockyard.onrender.com",
+        primary: true,
+      },
       { label: "GitHub", href: "https://github.com/BMcCarthy96/StockYard" },
     ],
     note: "Began as a team capstone concept; this repository is my complete solo rebuild.",
-    // TODO: enable once the live demo is up (verify seeds first):
-    // loginHint: "Demo login: demo@aa.io / password",
-    image: undefined, // TODO: /projects/stockyard-dashboard.png after deploy
+    loginHint: "Click \"Try the demo\" on the homepage, no signup needed",
+    image: {
+      src: "/projects/stockyard-asset-detail.png",
+      alt: "StockYard asset detail page with candlestick chart and trade panel",
+    },
   },
   {
     slug: "fitbot",

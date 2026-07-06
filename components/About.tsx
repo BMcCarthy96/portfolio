@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function About() {
   return (
     <section id="about">
@@ -6,11 +8,14 @@ export function About() {
           About
         </h2>
         <div className="mt-10 flex flex-col gap-10 sm:flex-row">
-          {/* TODO: replace the monogram block with the upscaled headshot once provided:
-              <Image src="/headshot.jpg" alt="Brandon McCarthy" width={192} height={192}
-                     className="h-48 w-48 rounded-2xl object-cover" /> */}
-          <div className="flex h-48 w-48 shrink-0 items-center justify-center rounded-2xl border border-zinc-200 bg-gradient-to-br from-indigo-50 to-zinc-100">
-            <span className="text-5xl font-semibold text-indigo-300">BM</span>
+          <div className="relative h-64 w-48 shrink-0 overflow-hidden rounded-2xl border border-zinc-200">
+            <Image
+              src="/headshot.jpg"
+              alt="Brandon McCarthy"
+              fill
+              sizes="192px"
+              className="object-cover"
+            />
           </div>
           <div className="space-y-4 text-zinc-600 leading-relaxed">
             <p>
