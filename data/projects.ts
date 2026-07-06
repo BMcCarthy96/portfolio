@@ -111,14 +111,17 @@ export const featuredProjects: Project[] = [
       "AsyncStorage",
     ],
     links: [
+      { label: "GitHub", href: "https://github.com/BMcCarthy96/FitBot" },
       {
-        label: "GitHub",
-        href: "https://github.com/BMcCarthy96/FitBot",
+        label: "Demo (GIF)",
+        href: "/projects/fitbot-demo.gif",
         primary: true,
       },
-      // TODO: add { label: "Demo Video", href: "<link>" } once recorded
     ],
-    image: undefined, // TODO: /projects/fitbot-composite.png (phone screenshots)
+    image: {
+      src: "/projects/fitbot-composite.png",
+      alt: "FitBot onboarding, home dashboard, and progress screens",
+    },
   },
   {
     slug: "dineair",
