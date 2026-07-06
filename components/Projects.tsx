@@ -28,7 +28,7 @@ export function Projects() {
                 <span className="font-semibold text-zinc-900">
                   {project.name}
                 </span>
-                <span className="text-zinc-600"> — {project.description}</span>
+                <span className="text-zinc-600"> · {project.description}</span>
               </div>
               <div className="flex shrink-0 gap-4">
                 {project.links.map((link) => (

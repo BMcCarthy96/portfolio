@@ -26,7 +26,7 @@ export const featuredProjects: Project[] = [
     label: "AI Client Operations Platform",
     name: "McCarthy AI Automations",
     tagline:
-      "End-to-end platform for AI automation work — LLM lead classification, RAG-powered support, onboarding, billing, and reporting.",
+      "End-to-end platform for AI automation work: LLM lead classification, RAG-powered support, onboarding, billing, and reporting.",
     bullets: [
       "Built and deployed AI automation systems using OpenAI and Claude to classify and act on structured and unstructured data.",
       "Designed RAG workflows for context-aware responses over project, support, and service data.",
@@ -62,10 +62,10 @@ export const featuredProjects: Project[] = [
     label: "Full-Stack Trading Platform",
     name: "StockYard",
     tagline:
-      "Paper-trading platform with real market data — live candlestick charts, a portfolio equity curve, and $100k of play money.",
+      "Paper-trading platform with real market data: live candlestick charts, a portfolio equity curve, and $100k of play money.",
     bullets: [
       "Market-data service with TTL-cached batch fetches (yfinance) and a deterministic simulated fallback, so the app stays fully functional through API outages and rate limits.",
-      "Real trading logic — weighted average cost basis, oversell/overbuy rejection — and an equity curve that replays actual transaction history against historical prices.",
+      "Real trading logic (weighted average cost basis, oversell/overbuy rejection) and an equity curve that replays actual transaction history against historical prices.",
       "Multi-stage Docker build (Node → Python) deployed on Render with idempotent migrations and seeding; core logic covered by pytest.",
     ],
     chips: [
@@ -81,7 +81,7 @@ export const featuredProjects: Project[] = [
       // TODO: add { label: "Live Demo", href: "<Render URL>", primary: true } once deployed
       { label: "GitHub", href: "https://github.com/BMcCarthy96/StockYard" },
     ],
-    note: "Began as a team capstone concept — this repository is my complete solo rebuild.",
+    note: "Began as a team capstone concept; this repository is my complete solo rebuild.",
     // TODO: enable once the live demo is up (verify seeds first):
     // loginHint: "Demo login: demo@aa.io / password",
     image: undefined, // TODO: /projects/stockyard-dashboard.png after deploy
@@ -91,7 +91,7 @@ export const featuredProjects: Project[] = [
     label: "AI Mobile App · Computer Vision",
     name: "FitBot",
     tagline:
-      "Snap a photo of your meal — Claude's vision API returns calories, macros, and a health score in seconds.",
+      "Snap a photo of your meal, and Claude's vision API returns calories, macros, and a health score in seconds.",
     bullets: [
       "Camera → compression → Claude vision with a structured-JSON prompt → editable nutrition entry, with prompt caching to cut per-call API cost.",
       "BMR/TDEE goal engine, weight charting, streaks, and configurable push-notification reminders.",
@@ -119,7 +119,7 @@ export const featuredProjects: Project[] = [
     label: "Real-Time Delivery Platform",
     name: "DineAir",
     tagline:
-      "Airport food delivery — order from your gate while restaurants and runners coordinate through live WebSocket updates.",
+      "Airport food delivery: order from your gate while restaurants and runners coordinate through live WebSocket updates.",
     bullets: [
       "Full-stack real-time platform for four roles (customer, restaurant owner, runner, admin) with role-based access control.",
       "Live data flows over WebSockets; Google Maps and flight-data API integrations for location and status tracking.",
@@ -154,7 +154,7 @@ export const additionalProjects: AdditionalProject[] = [
   {
     name: "StayHaven",
     description:
-      "Full-stack Airbnb-style booking app — auth, listings, reviews, and bookings on a normalized PostgreSQL schema.",
+      "Full-stack Airbnb-style booking app with auth, listings, reviews, and bookings on a normalized PostgreSQL schema.",
     links: [
       { label: "Live", href: "https://stayhaven-hyyh.onrender.com" },
       { label: "GitHub", href: "https://github.com/BMcCarthy96/StayHaven" },

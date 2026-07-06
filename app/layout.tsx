@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brandon McCarthy — AI-Focused Software Engineer",
+  title: "Brandon McCarthy | AI-Focused Software Engineer",
   description:
     "AI-focused software engineer building LLM-powered workflow automation, internal tools, and full-stack web apps. TypeScript, Python, React, Next.js, Flask.",
   openGraph: {
-    title: "Brandon McCarthy — AI-Focused Software Engineer",
+    title: "Brandon McCarthy | AI-Focused Software Engineer",
     description:
       "LLM-powered workflow automation, internal tools, and full-stack web apps.",
     type: "website",

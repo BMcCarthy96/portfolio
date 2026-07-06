@@ -15,15 +15,15 @@ export function About() {
           <div className="space-y-4 text-zinc-600 leading-relaxed">
             <p>
               I&apos;m a software engineer focused on AI-powered workflow
-              automation — systems that take in messy real-world data, use LLMs
+              automation: systems that take in messy real-world data, use LLMs
               to classify and act on it, and hand results to people through
               clean internal tools.
             </p>
             <p>
               I came to engineering from five years in healthcare
               documentation, where I watched skilled people lose hours to
-              manual process — exactly the problem I build against now. That
-              background means I&apos;m comfortable with the messy, regulated,
+              manual process. That&apos;s exactly the problem I build against
+              now, and it means I&apos;m comfortable with the messy, regulated,
               real-world data most demos ignore.
             </p>
             <p>
@@ -31,7 +31,7 @@ export function About() {
               Automations), a paper-trading platform with a fault-tolerant
               market-data pipeline (StockYard), and a mobile nutrition tracker
               built on Claude&apos;s vision API (FitBot). Based in Maryville,
-              TN — open to remote and hybrid roles.
+              TN. Open to remote and hybrid roles.
             </p>
           </div>
         </div>

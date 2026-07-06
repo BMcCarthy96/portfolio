@@ -57,7 +57,7 @@ export function Experience() {
                 <h3 className="font-semibold text-zinc-900">
                   {role.title}{" "}
                   <span className="font-normal text-zinc-600">
-                    — {role.org}
+                    · {role.org}
                   </span>
                 </h3>
                 <p className="mt-1 text-sm leading-relaxed text-zinc-600">
