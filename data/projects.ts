@@ -118,7 +118,7 @@ export const featuredProjects: Project[] = [
       },
       { label: "GitHub", href: "https://github.com/BMcCarthy96/FitBot" },
     ],
-    loginHint: "Try it in your browser — quick email sign-up, no verification needed",
+    loginHint: "Click \"Try the demo\" on the landing screen, no signup needed",
     image: {
       src: "/projects/fitbot-composite.png",
       alt: "FitBot onboarding, home dashboard, and progress screens",
