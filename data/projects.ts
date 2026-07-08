@@ -111,13 +111,14 @@ export const featuredProjects: Project[] = [
       "AsyncStorage",
     ],
     links: [
-      { label: "GitHub", href: "https://github.com/BMcCarthy96/FitBot" },
       {
-        label: "Demo (GIF)",
-        href: "/projects/fitbot-demo.gif",
+        label: "Live Demo",
+        href: "https://fit-bot-eight.vercel.app/",
         primary: true,
       },
+      { label: "GitHub", href: "https://github.com/BMcCarthy96/FitBot" },
     ],
+    loginHint: "Try it in your browser — quick email sign-up, no verification needed",
     image: {
       src: "/projects/fitbot-composite.png",
       alt: "FitBot onboarding, home dashboard, and progress screens",
