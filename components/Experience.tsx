@@ -40,9 +40,9 @@ const education = [
 
 export function Experience() {
   return (
-    <section id="experience" className="border-t border-zinc-100 bg-zinc-50/60">
+    <section id="experience" className="border-t border-white/10 bg-white/[0.03]">
       <div className="mx-auto max-w-5xl px-4 py-12 sm:py-20 sm:px-6">
-        <h2 className="text-3xl font-semibold tracking-tight text-zinc-900">
+        <h2 className="text-3xl font-semibold tracking-tight text-white">
           Experience & Education
         </h2>
 
@@ -52,15 +52,15 @@ export function Experience() {
               key={role.title}
               className="grid gap-1 sm:grid-cols-[220px_1fr] sm:gap-8"
             >
-              <p className="text-sm text-zinc-500">{role.dates}</p>
+              <p className="text-sm text-slate-400">{role.dates}</p>
               <div>
-                <h3 className="font-semibold text-zinc-900">
+                <h3 className="font-semibold text-white">
                   {role.title}{" "}
-                  <span className="font-normal text-zinc-600">
+                  <span className="font-normal text-slate-400">
                     · {role.org}
                   </span>
                 </h3>
-                <p className="mt-1 text-sm leading-relaxed text-zinc-600">
+                <p className="mt-1 text-sm leading-relaxed text-slate-300">
                   {role.summary}
                 </p>
               </div>
@@ -68,18 +68,18 @@ export function Experience() {
           ))}
         </div>
 
-        <h3 className="mt-14 text-xs font-semibold uppercase tracking-widest text-indigo-600">
+        <h3 className="mt-14 text-xs font-semibold uppercase tracking-widest text-indigo-400">
           Education & Certifications
         </h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {education.map((item) => (
             <div
               key={item.name}
-              className="rounded-xl border border-zinc-200 bg-white p-4"
+              className="rounded-xl border border-white/10 bg-white/[0.04] p-4"
             >
-              <p className="font-medium text-zinc-900">{item.name}</p>
-              <p className="text-sm text-zinc-600">{item.detail}</p>
-              <p className="mt-1 text-xs text-zinc-500">{item.dates}</p>
+              <p className="font-medium text-white">{item.name}</p>
+              <p className="text-sm text-slate-300">{item.detail}</p>
+              <p className="mt-1 text-xs text-slate-400">{item.dates}</p>
             </div>
           ))}
         </div>

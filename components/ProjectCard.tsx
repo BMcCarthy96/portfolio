@@ -4,8 +4,8 @@ import { ExternalLinkIcon } from "@/components/icons";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm">
-      <div className="relative aspect-[16/10] w-full border-b border-zinc-100 bg-zinc-50">
+    <article className="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#0d1428]/80 shadow-lg shadow-black/20">
+      <div className="relative aspect-[16/10] w-full border-b border-white/10 bg-white/5">
         {project.image ? (
           <Image
             src={project.image.src}
@@ -15,43 +15,43 @@ export function ProjectCard({ project }: { project: Project }) {
             className="object-cover object-top"
           />
         ) : (
-          <div className="flex h-full w-full flex-col items-center justify-center gap-1 bg-gradient-to-br from-indigo-50 via-white to-zinc-100">
-            <span className="text-xl font-semibold text-zinc-400">
+          <div className="flex h-full w-full flex-col items-center justify-center gap-1 bg-gradient-to-br from-[#131c38] via-[#0d1428] to-[#0a0f1e]">
+            <span className="text-xl font-semibold text-slate-500">
               {project.name}
             </span>
-            <span className="text-xs text-zinc-400">screenshot coming soon</span>
+            <span className="text-xs text-slate-500">screenshot coming soon</span>
           </div>
         )}
       </div>
 
       <div className="flex flex-1 flex-col gap-4 p-6">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">
+          <p className="text-xs font-semibold uppercase tracking-widest text-indigo-400">
             {project.label}
           </p>
-          <h3 className="mt-1.5 text-2xl font-semibold tracking-tight text-zinc-900">
+          <h3 className="mt-1.5 text-2xl font-semibold tracking-tight text-white">
             {project.name}
           </h3>
-          <p className="mt-2 font-medium leading-snug text-zinc-800">
+          <p className="mt-2 font-medium leading-snug text-slate-200">
             {project.tagline}
           </p>
         </div>
 
-        <ul className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-zinc-600">
+        <ul className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-slate-300">
           {project.bullets.map((bullet) => (
             <li key={bullet}>{bullet}</li>
           ))}
         </ul>
 
         {project.note && (
-          <p className="text-xs italic text-zinc-500">{project.note}</p>
+          <p className="text-xs italic text-slate-400">{project.note}</p>
         )}
 
         <div className="flex flex-wrap gap-2">
           {project.chips.map((chip) => (
             <span
               key={chip}
-              className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs text-zinc-700"
+              className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300"
             >
               {chip}
             </span>
@@ -64,7 +64,7 @@ export function ProjectCard({ project }: { project: Project }) {
               <a
                 key={link.href}
                 href={link.href}
-                className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-400"
               >
                 {link.label}
                 <ExternalLinkIcon />
@@ -73,7 +73,7 @@ export function ProjectCard({ project }: { project: Project }) {
               <a
                 key={link.href}
                 href={link.href}
-                className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-slate-200 transition-colors hover:bg-white/10"
               >
                 {link.label}
                 <ExternalLinkIcon />
@@ -81,7 +81,7 @@ export function ProjectCard({ project }: { project: Project }) {
             ),
           )}
           {project.loginHint && (
-            <span className="font-mono text-xs text-zinc-500">
+            <span className="font-mono text-xs text-slate-400">
               {project.loginHint}
             </span>
           )}

@@ -4,11 +4,11 @@ export function About() {
   return (
     <section id="about">
       <div className="mx-auto max-w-5xl px-4 py-12 sm:py-20 sm:px-6">
-        <h2 className="text-3xl font-semibold tracking-tight text-zinc-900">
+        <h2 className="text-3xl font-semibold tracking-tight text-white">
           About
         </h2>
         <div className="mt-10 flex flex-col gap-10 sm:flex-row">
-          <div className="relative h-64 w-48 shrink-0 overflow-hidden rounded-2xl border border-zinc-200">
+          <div className="relative h-64 w-48 shrink-0 overflow-hidden rounded-2xl border border-white/10">
             <Image
               src="/headshot.jpg"
               alt="Brandon McCarthy"
@@ -17,7 +17,7 @@ export function About() {
               className="object-cover"
             />
           </div>
-          <div className="space-y-4 text-zinc-600 leading-relaxed">
+          <div className="space-y-4 text-slate-300 leading-relaxed">
             <p>
               I&apos;m a software engineer focused on AI-powered workflow
               automation: systems that take in messy real-world data, use LLMs

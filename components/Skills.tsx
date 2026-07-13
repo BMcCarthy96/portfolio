@@ -61,20 +61,20 @@ export function Skills() {
   return (
     <section id="skills">
       <div className="mx-auto max-w-5xl px-4 py-12 sm:py-20 sm:px-6">
-        <h2 className="text-3xl font-semibold tracking-tight text-zinc-900">
+        <h2 className="text-3xl font-semibold tracking-tight text-white">
           Skills
         </h2>
         <div className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2">
           {skillGroups.map((group) => (
             <div key={group.title}>
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-indigo-600">
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-indigo-400">
                 {group.title}
               </h3>
               <div className="mt-3 flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-sm text-zinc-700"
+                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-300"
                   >
                     {skill}
                   </span>
