@@ -32,11 +32,12 @@ export function About() {
               real-world data most demos ignore.
             </p>
             <p>
-              Recent work: an AI client-operations platform (McCarthy AI
-              Automations), a paper-trading platform with a fault-tolerant
-              market-data pipeline (StockYard), and a mobile nutrition tracker
-              built on Claude&apos;s vision API (FitBot). Based in Maryville,
-              TN. Open to remote and hybrid roles.
+              Recent work: a healthcare intake workflow engine that turns
+              document packets into evidence-backed, human-approved records
+              (IntakeFlow), an AI client-operations platform (McCarthy AI
+              Automations), and a mobile nutrition tracker built on
+              Claude&apos;s vision API (FitBot). Based in Maryville, TN. Open
+              to remote and hybrid roles.
             </p>
           </div>
         </div>

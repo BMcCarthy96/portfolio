@@ -4,7 +4,7 @@ export const site = {
   tagline:
     "I build LLM-powered workflow automations, internal tools, and full-stack web apps that turn manual processes into reliable systems.",
   stats: [
-    "4 deployed applications",
+    "5 deployed applications",
     "LLM & RAG systems in production",
     "5+ years working with real-world healthcare data",
   ],

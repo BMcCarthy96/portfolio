@@ -58,6 +58,44 @@ export const featuredProjects: Project[] = [
     },
   },
   {
+    slug: "healthcare-intake-ai",
+    label: "AI Document Workflow · Healthcare",
+    name: "IntakeFlow",
+    tagline:
+      "Healthcare intake packets go from PDF to reviewed, exportable record: AI proposes evidence-backed fields, deterministic rules route, humans approve.",
+    bullets: [
+      "Model gateway extracts structured fields with page-level evidence quotes and confidence scores — swappable between a deterministic stub and Claude with one env var.",
+      "Deterministic code owns every status change: missing fields, contradictions, and prompt-injection attempts in documents route to a human reviewer, never to auto-export.",
+      "Idempotent processing and export, an audit event on every transition, and an eval harness that scores routing + field accuracy across 60 synthetic packets in CI.",
+    ],
+    chips: [
+      "FastAPI",
+      "Python",
+      "Next.js",
+      "TypeScript",
+      "SQLAlchemy",
+      "Claude API",
+      "pytest",
+    ],
+    links: [
+      {
+        label: "Live Demo",
+        href: "https://healthcare-intake-ai.vercel.app",
+        primary: true,
+      },
+      {
+        label: "GitHub",
+        href: "https://github.com/BMcCarthy96/healthcare-intake-ai",
+      },
+    ],
+    note: "Synthetic data only — no PHI, no clinical decisions. Built against the manual intake work I did for five years in healthcare documentation.",
+    loginHint: "Click \"Load a complete synthetic demo\", no signup needed",
+    image: {
+      src: "/projects/healthcare-intake-workspace.png",
+      alt: "IntakeFlow case workspace: extracted fields with page-level evidence and the reviewer approval gate",
+    },
+  },
+  {
     slug: "stockyard",
     label: "Full-Stack Trading Platform",
     name: "StockYard",
@@ -124,34 +162,6 @@ export const featuredProjects: Project[] = [
       alt: "FitBot onboarding, home dashboard, and progress screens",
     },
   },
-  {
-    slug: "dineair",
-    label: "Real-Time Delivery Platform",
-    name: "DineAir",
-    tagline:
-      "Airport food delivery: order from your gate while restaurants and runners coordinate through live WebSocket updates.",
-    bullets: [
-      "Full-stack real-time platform for four roles (customer, restaurant owner, runner, admin) with role-based access control.",
-      "Live data flows over WebSockets; Google Maps and flight-data API integrations for location and status tracking.",
-      "Backend designed for high-frequency transactional data with strong validation and state management.",
-    ],
-    chips: [
-      "React",
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-      "WebSockets",
-      "Google Maps API",
-    ],
-    links: [
-      { label: "Live Demo", href: "https://dineair.onrender.com", primary: true },
-      { label: "GitHub", href: "https://github.com/BMcCarthy96/DineAir" },
-    ],
-    image: {
-      src: "/projects/dineair-liveboard.png",
-      alt: "DineAir live order board",
-    },
-  },
 ];
 
 export type AdditionalProject = {
@@ -161,6 +171,15 @@ export type AdditionalProject = {
 };
 
 export const additionalProjects: AdditionalProject[] = [
+  {
+    name: "DineAir",
+    description:
+      "Real-time airport food delivery: four coordinated roles (customer, restaurant, runner, admin) over live WebSockets with Google Maps and flight-data integrations.",
+    links: [
+      { label: "Live", href: "https://dineair.onrender.com" },
+      { label: "GitHub", href: "https://github.com/BMcCarthy96/DineAir" },
+    ],
+  },
   {
     name: "StayHaven",
     description:
