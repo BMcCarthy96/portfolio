@@ -20,6 +20,7 @@ export function Header() {
         </nav>
         <a
           href={site.resumePath}
+          download={site.resumeFileName}
           className="rounded-lg bg-indigo-500 px-3.5 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-400"
         >
           Resume

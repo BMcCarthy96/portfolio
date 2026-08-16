@@ -14,14 +14,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brandon McCarthy | AI-Focused Software Engineer",
+  metadataBase: new URL("https://portfolio-coral-pi-56.vercel.app"),
+  title: "Brandon McCarthy | AI Solutions & Implementation Engineer",
   description:
-    "AI-focused software engineer building LLM-powered workflow automation, internal tools, and full-stack web apps. TypeScript, Python, React, Next.js, Flask.",
+    "AI solutions and implementation engineer building enterprise AI workflows, healthcare integrations, and full-stack systems with TypeScript, Python, AWS, evaluation, and human review.",
+  keywords: [
+    "AI solutions engineer",
+    "AI implementation engineer",
+    "enterprise AI workflows",
+    "healthcare integrations",
+    "TypeScript",
+    "Python",
+    "AWS Bedrock",
+    "LLM evaluation",
+    "human-in-the-loop systems",
+  ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Brandon McCarthy | AI-Focused Software Engineer",
+    title: "Brandon McCarthy | AI Solutions & Implementation Engineer",
     description:
-      "LLM-powered workflow automation, internal tools, and full-stack web apps.",
+      "Enterprise AI workflows, healthcare integrations, and full-stack systems built for validated, auditable outcomes.",
+    url: "/",
+    siteName: "Brandon McCarthy Portfolio",
     type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Brandon McCarthy | AI Solutions & Implementation Engineer",
+    description:
+      "Enterprise AI workflows, healthcare integrations, and full-stack systems built for validated, auditable outcomes.",
   },
 };
 

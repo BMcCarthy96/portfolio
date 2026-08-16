@@ -35,6 +35,8 @@ export function Projects() {
                   <a
                     key={link.href}
                     href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex items-center gap-1 text-sm font-medium text-indigo-400 transition-colors hover:text-indigo-300"
                   >
                     {link.label}

@@ -20,6 +20,7 @@ export function Hero() {
         </a>
         <a
           href={site.resumePath}
+          download={site.resumeFileName}
           className="rounded-lg border border-white/20 px-5 py-2.5 text-sm font-medium text-slate-200 transition-colors hover:bg-white/10"
         >
           Download Resume
@@ -48,7 +49,10 @@ export function Hero() {
           </a>
         </span>
       </div>
-      <p className="mt-10 text-sm text-slate-400">
+      <p className="mt-9 text-sm font-medium text-slate-300">
+        {site.location}
+      </p>
+      <p className="mt-3 text-sm text-slate-400">
         {site.stats.join("  ·  ")}
       </p>
     </section>
