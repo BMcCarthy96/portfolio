@@ -4,39 +4,44 @@ const roles = [
     org: "micro1",
     dates: "Jul 2026 – Present · Remote",
     summary:
-      "Evaluate AI model outputs against detailed rubrics and project specifications, write structured feedback, and flag ambiguous requirements or edge cases.",
+      "I review AI responses against each project's instructions and scoring guide. My feedback points to the exact issue, and I flag requirements that are unclear or missing.",
   },
   {
     title: "Medical Records Specialist",
     org: "Physician Life Care Planning",
     dates: "Feb 2021 – Jul 2026 · Remote",
     summary:
-      "Prepared structured reports from complex clinical records for physicians and legal teams, traced missing or conflicting details, and documented needed clarifications.",
+      "I turned long medical records into structured reports for physicians and legal teams. I also tracked down missing or conflicting details and documented what needed clarification.",
   },
   {
     title: "Medical Scribe",
     org: "AQuity Solutions",
     dates: "Nov 2020 – Feb 2021 · Remote",
     summary:
-      "Created real-time clinical documentation in EHR systems and resolved unclear details with providers.",
+      "I wrote clinical notes in the EHR during patient visits and asked providers to clear up details when the source was unclear.",
   },
 ];
 
 const education = [
   {
-    name: "Maryville University",
-    detail: "M.S. Artificial Intelligence",
-    dates: "Expected Dec 2027",
-  },
-  {
-    name: "University of Tennessee, Knoxville",
-    detail: "B.A. Psychology",
-    dates: "Dec 2020",
-  },
-  {
-    name: "Pellissippi State Community College",
-    detail: "A.S. Psychology",
+    name: "East Tennessee State University",
+    detail: "B.S. Biology · Psychology minor · GPA 3.2",
     dates: "May 2018",
+  },
+  {
+    name: "App Academy",
+    detail: "Full Stack Web Development Bootcamp",
+    dates: "May 2025",
+  },
+  {
+    name: "Hack Reactor",
+    detail: "Full Stack Web Development Bootcamp",
+    dates: "Oct 2023",
+  },
+  {
+    name: "Coursera",
+    detail: "Machine Learning Specialization (Andrew Ng)",
+    dates: "Aug 2025",
   },
 ];
 
@@ -71,7 +76,7 @@ export function Experience() {
         </div>
 
         <h3 className="mt-14 text-xs font-semibold uppercase tracking-widest text-indigo-400">
-          Education
+          Education & Training
         </h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {education.map((item) => (
