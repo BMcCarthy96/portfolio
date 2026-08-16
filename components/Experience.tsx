@@ -7,16 +7,16 @@ const roles = [
       "I review AI responses against each project's instructions and scoring guide. My feedback points to the exact issue, and I flag requirements that are unclear or missing.",
   },
   {
-    title: "Medical Records Specialist",
+    title: "Production Specialist / Transcriptionist",
     org: "Physician Life Care Planning",
-    dates: "Feb 2021 – Jul 2026 · Remote",
+    dates: "Sep 2023 – Present · Remote",
     summary:
       "I turned long medical records into structured reports for physicians and legal teams. I also tracked down missing or conflicting details and documented what needed clarification.",
   },
   {
     title: "Medical Scribe",
     org: "AQuity Solutions",
-    dates: "Nov 2020 – Feb 2021 · Remote",
+    dates: "Jul 2021 – Sep 2023 · Remote",
     summary:
       "I wrote clinical notes in the EHR during patient visits and asked providers to clear up details when the source was unclear.",
   },
