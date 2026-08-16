@@ -9,7 +9,8 @@ export function Contact() {
           Get in touch
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-slate-300">
-          Open to AI engineering, implementation, and full-stack roles.
+          Open to AI solutions, implementation, integration, applied AI, and
+          full-stack software engineering roles. {site.location}.
         </p>
         <a
           href={`mailto:${site.email}`}
@@ -42,6 +43,7 @@ export function Contact() {
         </div>
         <a
           href={site.resumePath}
+          download={site.resumeFileName}
           className="mt-8 inline-block rounded-lg border border-white/20 px-5 py-2.5 text-sm font-medium text-slate-200 transition-colors hover:bg-white/10"
         >
           Download Resume

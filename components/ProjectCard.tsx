@@ -47,6 +47,22 @@ export function ProjectCard({ project }: { project: Project }) {
           <p className="text-xs italic text-slate-400">{project.note}</p>
         )}
 
+        {project.proof && (
+          <div
+            className="flex flex-wrap gap-2"
+            aria-label={`${project.name} evidence`}
+          >
+            {project.proof.map((proof) => (
+              <span
+                key={proof}
+                className="rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1 text-xs font-semibold text-cyan-200"
+              >
+                {proof}
+              </span>
+            ))}
+          </div>
+        )}
+
         <div className="flex flex-wrap gap-2">
           {project.chips.map((chip) => (
             <span
@@ -64,6 +80,8 @@ export function ProjectCard({ project }: { project: Project }) {
               <a
                 key={link.href}
                 href={link.href}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-400"
               >
                 {link.label}
@@ -73,6 +91,8 @@ export function ProjectCard({ project }: { project: Project }) {
               <a
                 key={link.href}
                 href={link.href}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-slate-200 transition-colors hover:bg-white/10"
               >
                 {link.label}

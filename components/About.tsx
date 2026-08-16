@@ -19,25 +19,24 @@ export function About() {
           </div>
           <div className="space-y-4 text-slate-300 leading-relaxed">
             <p>
-              I&apos;m a software engineer focused on AI-powered workflow
-              automation: systems that take in messy real-world data, use LLMs
-              to classify and act on it, and hand results to people through
-              clean internal tools.
+              I build AI implementation systems that turn messy requirements,
+              documents, and operational signals into evidence-backed outputs
+              people can review and trust. My strongest recent work is the
+              Enterprise AI Implementation Workbench and Pulse: full-stack
+              products built around integrations, validation, evaluation,
+              human approval, auditability, and failure recovery.
             </p>
             <p>
-              I came to engineering from five years in healthcare
-              documentation, where I watched skilled people lose hours to
-              manual process. That&apos;s exactly the problem I build against
-              now, and it means I&apos;m comfortable with the messy, regulated,
-              real-world data most demos ignore.
+              Five years in healthcare documentation taught me to trace claims
+              back to source records, protect confidential information, resolve
+              contradictions, and communicate clearly with physicians and
+              legal teams. I now apply the same discipline while evaluating AI
+              model outputs on contract with micro1.
             </p>
             <p>
-              Recent work: a healthcare intake workflow engine that turns
-              document packets into evidence-backed, human-approved records
-              (IntakeFlow), an AI client-operations platform (McCarthy AI
-              Automations), and a mobile nutrition tracker built on
-              Claude&apos;s vision API (FitBot). Based in Maryville, TN. Open
-              to remote and hybrid roles.
+              Based in Maryville, Tennessee and relocating to Cary, North
+              Carolina upon offer. I&apos;m targeting remote roles first, along
+              with strong hybrid opportunities across the Triangle.
             </p>
           </div>
         </div>

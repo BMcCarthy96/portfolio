@@ -1,40 +1,42 @@
 const roles = [
   {
-    title: "Production Specialist / Transcriptionist",
-    org: "Physician Life Care Planning",
-    dates: "Sep 2023 – Present · Remote",
+    title: "AI Trainer (Contract)",
+    org: "micro1",
+    dates: "Jul 2026 – Present · Remote",
     summary:
-      "Structure complex medical records into actionable reports; high-volume unstructured-data processing with physicians.",
+      "Evaluate AI model outputs against detailed rubrics and project specifications, write structured feedback, and flag ambiguous requirements or edge cases.",
+  },
+  {
+    title: "Medical Records Specialist",
+    org: "Physician Life Care Planning",
+    dates: "Feb 2021 – Jul 2026 · Remote",
+    summary:
+      "Prepared structured reports from complex clinical records for physicians and legal teams, traced missing or conflicting details, and documented needed clarifications.",
   },
   {
     title: "Medical Scribe",
     org: "AQuity Solutions",
-    dates: "Jul 2021 – Sep 2023 · Remote",
+    dates: "Nov 2020 – Feb 2021 · Remote",
     summary:
-      "Validated structured and unstructured clinical data; improved data quality through workflow optimization.",
+      "Created real-time clinical documentation in EHR systems and resolved unclear details with providers.",
   },
 ];
 
 const education = [
   {
-    name: "App Academy",
-    detail: "Full-Stack Software Engineering",
-    dates: "Mar 2024 – May 2025",
+    name: "Maryville University",
+    detail: "M.S. Artificial Intelligence",
+    dates: "Expected Dec 2027",
   },
   {
-    name: "Hack Reactor",
-    detail: "Software Engineering Immersive",
-    dates: "Jun 2023 – Oct 2023",
+    name: "University of Tennessee, Knoxville",
+    detail: "B.A. Psychology",
+    dates: "Dec 2020",
   },
   {
-    name: "Machine Learning Specialization",
-    detail: "DeepLearning.AI / Stanford Online",
-    dates: "Aug 2025",
-  },
-  {
-    name: "East Tennessee State University",
-    detail: "B.S. Biology, Minor in Psychology",
-    dates: "2014 – 2018",
+    name: "Pellissippi State Community College",
+    detail: "A.S. Psychology",
+    dates: "May 2018",
   },
 ];
 
@@ -69,7 +71,7 @@ export function Experience() {
         </div>
 
         <h3 className="mt-14 text-xs font-semibold uppercase tracking-widest text-indigo-400">
-          Education & Certifications
+          Education
         </h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {education.map((item) => (

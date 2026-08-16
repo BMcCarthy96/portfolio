@@ -10,6 +10,8 @@ export type Project = {
   name: string;
   tagline: string;
   bullets: string[];
+  /** Compact, recruiter-readable evidence points shown above the stack. */
+  proof?: string[];
   chips: string[];
   links: ProjectLink[];
   /** Path under /public. Card renders a styled placeholder when absent. */
@@ -22,39 +24,91 @@ export type Project = {
 
 export const featuredProjects: Project[] = [
   {
-    slug: "mccarthy-ai",
-    label: "AI Client Operations Platform",
-    name: "McCarthy AI Automations",
+    slug: "enterprise-ai-implementation-workbench",
+    label: "Enterprise AI Implementation Platform",
+    name: "Enterprise AI Implementation Workbench",
     tagline:
-      "End-to-end platform for AI automation work: LLM lead classification, RAG-powered support, onboarding, billing, and reporting.",
+      "Turns messy requirements and uploaded documents into cited, schema-validated delivery plans—with human approval before any task is created.",
     bullets: [
-      "Built and deployed AI automation systems using OpenAI and Claude to classify and act on structured and unstructured data.",
-      "Designed RAG workflows for context-aware responses over project, support, and service data.",
-      "End-to-end pipelines connecting APIs, databases, and AI models to automate lead intake, classification, and follow-up.",
+      "Multi-tenant requirements and document intake grounds plans with tenant-filtered pgvector retrieval; Zod validation and one repair attempt keep model output inside the delivery contract.",
+      "Four-role RBAC, application scoping, and PostgreSQL RLS reinforce tenant isolation; approval-gated task materialization keeps AI output separate from delivery state.",
+      "S3, SQS, Bedrock, retries, a DLQ, append-only audit history, OIDC/SCIM surfaces, and prompt-versioned evaluation make the workflow inspectable and recoverable.",
+    ],
+    proof: [
+      "4-role RBAC + RLS",
+      "15 cases × 3 prompt variants",
+      "SQS retries + DLQ",
     ],
     chips: [
       "Next.js",
       "TypeScript",
-      "Supabase",
-      "Clerk",
-      "OpenAI API",
-      "Claude API",
-      "SQL",
+      "PostgreSQL",
+      "Drizzle",
+      "AWS Bedrock",
+      "S3 / SQS",
+      "pgvector",
+      "Zod",
+      "Playwright",
     ],
     links: [
       {
-        label: "Live Site",
-        href: "https://www.mccarthyaiautomations.com",
+        label: "Case Study",
+        href: "https://github.com/BMcCarthy96/enterprise-ai-implementation-workbench/blob/main/docs/case-study.md",
         primary: true,
       },
       {
         label: "GitHub",
-        href: "https://github.com/BMcCarthy96/McCarthyAIAutomations",
+        href: "https://github.com/BMcCarthy96/enterprise-ai-implementation-workbench",
       },
     ],
+    note: "Seeded synthetic data and deterministic fixtures only. This is an engineering demonstration, not a client production deployment.",
     image: {
-      src: "/projects/mccarthyai-home.png",
-      alt: "McCarthy AI Automations homepage",
+      src: "/projects/enterprise-workbench.png",
+      alt: "Enterprise AI Implementation Workbench recruiter demo showing requirements-to-plan flow, schema repair, and a human approval gate",
+    },
+  },
+  {
+    slug: "pulse",
+    label: "AI Reliability Platform · Healthcare",
+    name: "Pulse",
+    tagline:
+      "Investigates failures across simulated healthcare integrations, cites the evidence, and keeps recovery behind human approval.",
+    bullets: [
+      "Monitors four simulated connectors with rolling health windows and automatic incident creation, then produces evidence-cited AI investigations.",
+      "Redacts PHI before inference and runs an independent leak check before findings are persisted or shown to a reviewer.",
+      "Human-approved recovery revalidates the target; HMAC verification, deduplication, Retry-After handling, background jobs, and audit history harden the workflow.",
+    ],
+    proof: [
+      "274 automated tests",
+      "19 evaluation fixtures",
+      "4 simulated connectors",
+    ],
+    chips: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Redis",
+      "BullMQ",
+      "Claude API",
+      "Docker",
+      "Playwright",
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/BMcCarthy96/pulse",
+        primary: true,
+      },
+      {
+        label: "Verified CI",
+        href: "https://github.com/BMcCarthy96/pulse/actions/runs/31920943916",
+      },
+    ],
+    note: "All healthcare data, identities, incidents, and connectors are synthetic. Pulse is not presented as a client production deployment.",
+    image: {
+      src: "/projects/pulse-recruiter-landing.png",
+      alt: "Pulse recruiter landing page showing synthetic healthcare integration monitoring, AI investigation, and approval-gated recovery",
     },
   },
   {
@@ -130,38 +184,6 @@ export const featuredProjects: Project[] = [
       alt: "StockYard asset detail page with candlestick chart and trade panel",
     },
   },
-  {
-    slug: "fitbot",
-    label: "AI Mobile App · Computer Vision",
-    name: "FitBot",
-    tagline:
-      "Snap a photo of your meal, and Claude's vision API returns calories, macros, and a health score in seconds.",
-    bullets: [
-      "Camera → compression → Claude vision with a structured-JSON prompt → editable nutrition entry, with prompt caching to cut per-call API cost.",
-      "BMR/TDEE goal engine, weight charting, streaks, and configurable push-notification reminders.",
-      "Strict TypeScript on Expo SDK 54 / React Native 0.81; conversational AI nutrition coach built on the same Claude integration.",
-    ],
-    chips: [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "Claude Vision API",
-      "AsyncStorage",
-    ],
-    links: [
-      {
-        label: "Live Demo",
-        href: "https://fit-bot-eight.vercel.app/",
-        primary: true,
-      },
-      { label: "GitHub", href: "https://github.com/BMcCarthy96/FitBot" },
-    ],
-    loginHint: "Click \"Try the demo\" on the landing screen, no signup needed",
-    image: {
-      src: "/projects/fitbot-composite.png",
-      alt: "FitBot onboarding, home dashboard, and progress screens",
-    },
-  },
 ];
 
 export type AdditionalProject = {
@@ -172,6 +194,14 @@ export type AdditionalProject = {
 
 export const additionalProjects: AdditionalProject[] = [
   {
+    name: "DoseWise",
+    description:
+      "Mobile supplement scanner that combines label vision, NIH data, PubMed research, openFDA signals, and independently rebuilt citations into a plain-language trust report.",
+    links: [
+      { label: "GitHub", href: "https://github.com/BMcCarthy96/DoseWise" },
+    ],
+  },
+  {
     name: "DineAir",
     description:
       "Real-time airport food delivery: four coordinated roles (customer, restaurant, runner, admin) over live WebSockets with Google Maps and flight-data integrations.",
@@ -181,12 +211,24 @@ export const additionalProjects: AdditionalProject[] = [
     ],
   },
   {
-    name: "StayHaven",
+    name: "McCarthy AI Automations",
     description:
-      "Full-stack Airbnb-style booking app with auth, listings, reviews, and bookings on a normalized PostgreSQL schema.",
+      "Independent product prototype for lead intake, support, onboarding, billing, and reporting—not a client-services claim.",
     links: [
-      { label: "Live", href: "https://stayhaven-hyyh.onrender.com" },
-      { label: "GitHub", href: "https://github.com/BMcCarthy96/StayHaven" },
+      { label: "Live", href: "https://www.mccarthyaiautomations.com" },
+      {
+        label: "GitHub",
+        href: "https://github.com/BMcCarthy96/McCarthyAIAutomations",
+      },
+    ],
+  },
+  {
+    name: "FitBot",
+    description:
+      "React Native nutrition tracker with meal-photo analysis, structured Claude vision output, editable nutrition entries, and goal/progress tools.",
+    links: [
+      { label: "Live", href: "https://fit-bot-eight.vercel.app/" },
+      { label: "GitHub", href: "https://github.com/BMcCarthy96/FitBot" },
     ],
   },
 ];
