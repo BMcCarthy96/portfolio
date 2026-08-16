@@ -19,24 +19,22 @@ export function About() {
           </div>
           <div className="space-y-4 text-slate-300 leading-relaxed">
             <p>
-              I build AI implementation systems that turn messy requirements,
-              documents, and operational signals into evidence-backed outputs
-              people can review and trust. My strongest recent work is the
-              Enterprise AI Implementation Workbench and Pulse: full-stack
-              products built around integrations, validation, evaluation,
-              human approval, auditability, and failure recovery.
+              I build software for AI projects that involve documents,
+              integrations, and review steps. Workbench reads requirements and
+              source files, drafts a cited plan, and waits for a manager to
+              approve it. Pulse watches simulated healthcare connections and
+              gathers the evidence behind an incident.
             </p>
             <p>
-              Five years in healthcare documentation taught me to trace claims
-              back to source records, protect confidential information, resolve
-              contradictions, and communicate clearly with physicians and
-              legal teams. I now apply the same discipline while evaluating AI
-              model outputs on contract with micro1.
+              I spent more than five years working with healthcare records. I
+              learned to check each claim against its source and protect private
+              information. When a record was unclear, I asked for clarification.
+              I now review AI responses for micro1 on a contract basis.
             </p>
             <p>
-              Based in Maryville, Tennessee and relocating to Cary, North
-              Carolina upon offer. I&apos;m targeting remote roles first, along
-              with strong hybrid opportunities across the Triangle.
+              I live in Maryville, Tennessee. I plan to move to Cary when I
+              accept a role. I am looking for remote work or a hybrid role in
+              the Triangle.
             </p>
           </div>
         </div>

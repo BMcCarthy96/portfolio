@@ -28,11 +28,11 @@ export const featuredProjects: Project[] = [
     label: "Enterprise AI Implementation Platform",
     name: "Enterprise AI Implementation Workbench",
     tagline:
-      "Turns messy requirements and uploaded documents into cited, schema-validated delivery plans—with human approval before any task is created.",
+      "Workbench reads project requirements and uploaded documents. It drafts a cited plan, and a manager reviews it before the app creates tasks.",
     bullets: [
-      "Multi-tenant requirements and document intake grounds plans with tenant-filtered pgvector retrieval; Zod validation and one repair attempt keep model output inside the delivery contract.",
-      "Four-role RBAC, application scoping, and PostgreSQL RLS reinforce tenant isolation; approval-gated task materialization keeps AI output separate from delivery state.",
-      "S3, SQS, Bedrock, retries, a DLQ, append-only audit history, OIDC/SCIM surfaces, and prompt-versioned evaluation make the workflow inspectable and recoverable.",
+      "The app searches only the current tenant's requirements and documents. pgvector finds the relevant passages. Zod checks the draft and gives the model one repair attempt when the shape is wrong.",
+      "Four roles control what each person can see and do. PostgreSQL RLS adds a database check. A manager must approve the plan before it becomes tasks.",
+      "Files go to S3 and jobs run through SQS. Failed jobs retry before moving to a dead letter queue. The app keeps an audit record and tests 15 cases across three prompt versions.",
     ],
     proof: [
       "4-role RBAC + RLS",
@@ -61,10 +61,10 @@ export const featuredProjects: Project[] = [
         href: "https://github.com/BMcCarthy96/enterprise-ai-implementation-workbench",
       },
     ],
-    note: "Seeded synthetic data and deterministic fixtures only. This is an engineering demonstration, not a client production deployment.",
+    note: "The demo uses seeded synthetic data and fixed test cases.",
     image: {
       src: "/projects/enterprise-workbench.png",
-      alt: "Enterprise AI Implementation Workbench recruiter demo showing requirements-to-plan flow, schema repair, and a human approval gate",
+      alt: "Workbench demo showing project requirements, a draft plan, and the approval step",
     },
   },
   {
@@ -72,11 +72,11 @@ export const featuredProjects: Project[] = [
     label: "AI Reliability Platform · Healthcare",
     name: "Pulse",
     tagline:
-      "Investigates failures across simulated healthcare integrations, cites the evidence, and keeps recovery behind human approval.",
+      "Pulse watches four simulated healthcare connections. When a job fails, it opens an incident and gathers the evidence a reviewer needs.",
     bullets: [
-      "Monitors four simulated connectors with rolling health windows and automatic incident creation, then produces evidence-cited AI investigations.",
-      "Redacts PHI before inference and runs an independent leak check before findings are persisted or shown to a reviewer.",
-      "Human-approved recovery revalidates the target; HMAC verification, deduplication, Retry-After handling, background jobs, and audit history harden the workflow.",
+      "Health checks use rolling windows. A failing connector opens an incident, and the investigation cites the events behind each finding.",
+      "Patient details are removed before the model sees them. A separate check looks for anything the first pass missed.",
+      "A reviewer approves recovery. Pulse checks the target again at that point. Incoming events use HMAC signatures, duplicate events are ignored, and queued jobs follow Retry-After responses.",
     ],
     proof: [
       "274 automated tests",
@@ -105,10 +105,10 @@ export const featuredProjects: Project[] = [
         href: "https://github.com/BMcCarthy96/pulse/actions/runs/31920943916",
       },
     ],
-    note: "All healthcare data, identities, incidents, and connectors are synthetic. Pulse is not presented as a client production deployment.",
+    note: "The demo uses synthetic healthcare data and simulated connectors.",
     image: {
       src: "/projects/pulse-recruiter-landing.png",
-      alt: "Pulse recruiter landing page showing synthetic healthcare integration monitoring, AI investigation, and approval-gated recovery",
+      alt: "Pulse demo showing simulated healthcare connections, an incident, and the recovery approval",
     },
   },
   {
@@ -116,11 +116,11 @@ export const featuredProjects: Project[] = [
     label: "AI Document Workflow · Healthcare",
     name: "IntakeFlow",
     tagline:
-      "Healthcare intake packets go from PDF to reviewed, exportable record: AI proposes evidence-backed fields, deterministic rules route, humans approve.",
+      "IntakeFlow reads a synthetic intake packet and shows the page behind each field. Unclear cases go to a reviewer.",
     bullets: [
-      "Model gateway extracts structured fields with page-level evidence quotes and confidence scores — swappable between a deterministic stub and Claude with one env var.",
-      "Deterministic code owns every status change: missing fields, contradictions, and prompt-injection attempts in documents route to a human reviewer, never to auto-export.",
-      "Idempotent processing and export, an audit event on every transition, and an eval harness that scores routing + field accuracy across 60 synthetic packets in CI.",
+      "The model extracts fields from a PDF and returns the source page with each value. The demo can use a fixed local model response or Claude.",
+      "Application code decides where the case goes. Missing fields, contradictions, and text that looks like a prompt injection send the case to review.",
+      "Processing and export are safe to retry. Every status change is recorded. The evaluation set has 60 synthetic packets.",
     ],
     chips: [
       "FastAPI",
@@ -142,7 +142,7 @@ export const featuredProjects: Project[] = [
         href: "https://github.com/BMcCarthy96/healthcare-intake-ai",
       },
     ],
-    note: "Synthetic data only — no PHI, no clinical decisions. Built against the manual intake work I did for five years in healthcare documentation.",
+    note: "The demo uses synthetic data. Clinical decisions stay outside the project.",
     loginHint: "Click \"Load a complete synthetic demo\", no signup needed",
     image: {
       src: "/projects/healthcare-intake-workspace.png",
@@ -154,11 +154,11 @@ export const featuredProjects: Project[] = [
     label: "Full-Stack Trading Platform",
     name: "StockYard",
     tagline:
-      "Paper-trading platform with real market data: live candlestick charts, a portfolio equity curve, and $100k of play money.",
+      "StockYard is a paper trading app with live market charts, a portfolio history, and $100,000 in demo funds.",
     bullets: [
-      "Market-data service with TTL-cached batch fetches (yfinance) and a deterministic simulated fallback, so the app stays fully functional through API outages and rate limits.",
-      "Real trading logic (weighted average cost basis, oversell/overbuy rejection) and an equity curve that replays actual transaction history against historical prices.",
-      "Multi-stage Docker build (Node → Python) deployed on Render with idempotent migrations and seeding; core logic covered by pytest.",
+      "Market quotes are cached for a short time. When the data provider is unavailable, the demo switches to a fixed fallback data set.",
+      "Buy and sell rules reject orders that exceed the available cash or shares. Cost basis uses a weighted average. The chart rebuilds account value from the transaction history.",
+      "The app runs in Docker with PostgreSQL on Render. Database setup can run more than once safely, and pytest covers the trading logic.",
     ],
     chips: [
       "React",
@@ -177,7 +177,7 @@ export const featuredProjects: Project[] = [
       },
       { label: "GitHub", href: "https://github.com/BMcCarthy96/StockYard" },
     ],
-    note: "Began as a team capstone concept; this repository is my complete solo rebuild.",
+    note: "This is my solo rebuild of a team capstone idea.",
     loginHint: "Click \"Try the demo\" on the homepage, no signup needed",
     image: {
       src: "/projects/stockyard-asset-detail.png",
@@ -196,7 +196,7 @@ export const additionalProjects: AdditionalProject[] = [
   {
     name: "DoseWise",
     description:
-      "Mobile supplement scanner that combines label vision, NIH data, PubMed research, openFDA signals, and independently rebuilt citations into a plain-language trust report.",
+      "DoseWise reads a supplement label and builds a plain-language report from NIH, PubMed, and openFDA sources. It rebuilds each citation before showing it.",
     links: [
       { label: "GitHub", href: "https://github.com/BMcCarthy96/DoseWise" },
     ],
@@ -204,7 +204,7 @@ export const additionalProjects: AdditionalProject[] = [
   {
     name: "DineAir",
     description:
-      "Real-time airport food delivery: four coordinated roles (customer, restaurant, runner, admin) over live WebSockets with Google Maps and flight-data integrations.",
+      "DineAir is an airport food delivery demo. Customers, restaurants, runners, and admins share live order updates through WebSockets.",
     links: [
       { label: "Live", href: "https://dineair.onrender.com" },
       { label: "GitHub", href: "https://github.com/BMcCarthy96/DineAir" },
@@ -213,7 +213,7 @@ export const additionalProjects: AdditionalProject[] = [
   {
     name: "McCarthy AI Automations",
     description:
-      "Independent product prototype for lead intake, support, onboarding, billing, and reporting—not a client-services claim.",
+      "I built this personal prototype to explore lead intake and support in one app. It uses demo data.",
     links: [
       { label: "Live", href: "https://www.mccarthyaiautomations.com" },
       {
@@ -225,7 +225,7 @@ export const additionalProjects: AdditionalProject[] = [
   {
     name: "FitBot",
     description:
-      "React Native nutrition tracker with meal-photo analysis, structured Claude vision output, editable nutrition entries, and goal/progress tools.",
+      "FitBot is a React Native nutrition tracker. It reads a meal photo, drafts nutrition details, and lets the user edit the result before saving it.",
     links: [
       { label: "Live", href: "https://fit-bot-eight.vercel.app/" },
       { label: "GitHub", href: "https://github.com/BMcCarthy96/FitBot" },
