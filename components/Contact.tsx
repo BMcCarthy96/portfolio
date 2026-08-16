@@ -9,8 +9,9 @@ export function Contact() {
           Get in touch
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-slate-300">
-          Open to AI solutions, implementation, integration, applied AI, and
-          full-stack software engineering roles. {site.location}.
+          I am looking for AI solutions or software engineering work. Remote is
+          my first choice. I am also open to hybrid roles near Cary, North
+          Carolina.
         </p>
         <a
           href={`mailto:${site.email}`}

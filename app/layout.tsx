@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-coral-pi-56.vercel.app"),
   title: "Brandon McCarthy | AI Solutions & Implementation Engineer",
   description:
-    "AI solutions and implementation engineer building enterprise AI workflows, healthcare integrations, and full-stack systems with TypeScript, Python, AWS, evaluation, and human review.",
+    "Brandon McCarthy builds AI and full stack software with TypeScript, Python, PostgreSQL, and AWS. See Workbench, Pulse, IntakeFlow, and StockYard.",
   keywords: [
     "AI solutions engineer",
     "AI implementation engineer",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Brandon McCarthy | AI Solutions & Implementation Engineer",
     description:
-      "Enterprise AI workflows, healthcare integrations, and full-stack systems built for validated, auditable outcomes.",
+      "AI and full stack projects built with TypeScript, Python, PostgreSQL, and AWS.",
     url: "/",
     siteName: "Brandon McCarthy Portfolio",
     type: "website",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Brandon McCarthy | AI Solutions & Implementation Engineer",
     description:
-      "Enterprise AI workflows, healthcare integrations, and full-stack systems built for validated, auditable outcomes.",
+      "AI and full stack projects built with TypeScript, Python, PostgreSQL, and AWS.",
   },
 };
 

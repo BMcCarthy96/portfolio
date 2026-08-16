@@ -2,7 +2,7 @@ export const site = {
   name: "Brandon McCarthy",
   title: "AI Solutions & Implementation Engineer",
   tagline:
-    "I build enterprise AI workflows, integration systems, and full-stack tools that turn messy requirements and operational data into validated, auditable outcomes.",
+    "I build AI tools for documents and integrations. My projects keep model output tied to source evidence and give people a clear place to review it.",
   stats: [
     "274 automated tests in Pulse",
     "15-case × 3-variant Workbench evaluation matrix",
