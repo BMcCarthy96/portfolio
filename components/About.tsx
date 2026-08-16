@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export function About() {
   return (
     <section id="about">
@@ -7,34 +5,26 @@ export function About() {
         <h2 className="text-3xl font-semibold tracking-tight text-white">
           About
         </h2>
-        <div className="mt-10 flex flex-col gap-10 sm:flex-row">
-          <div className="relative h-64 w-48 shrink-0 overflow-hidden rounded-2xl border border-white/10">
-            <Image
-              src="/headshot.jpg"
-              alt="Brandon McCarthy"
-              fill
-              sizes="192px"
-              className="object-cover"
-            />
-          </div>
-          <div className="space-y-4 text-slate-300 leading-relaxed">
+        <div className="mt-8 max-w-3xl border-l border-violet-400/40 pl-5 sm:pl-7">
+          <div className="space-y-5 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
             <p>
-              I build software for AI projects that involve documents,
-              integrations, and review steps. Workbench reads requirements and
-              source files, drafts a cited plan, and waits for a manager to
-              approve it. Pulse watches simulated healthcare connections and
-              gathers the evidence behind an incident.
+              I build AI software for projects that depend on source documents
+              and outside systems. Workbench turns requirements and uploaded
+              files into a cited implementation plan that a manager reviews
+              before tasks are created. Pulse traces failures across simulated
+              healthcare connections and shows the events behind each finding.
             </p>
             <p>
-              I spent more than five years working with healthcare records. I
-              learned to check each claim against its source and protect private
-              information. When a record was unclear, I asked for clarification.
-              I now review AI responses for micro1 on a contract basis.
+              More than five years in healthcare documentation taught me to
+              verify details against the source, protect private information,
+              and ask for clarification when a record is incomplete. I now
+              review AI responses for micro1 on a contract basis and use those
+              same habits in my engineering work.
             </p>
             <p>
-              I live in Maryville, Tennessee. I plan to move to Cary when I
-              accept a role. I am looking for remote work or a hybrid role in
-              the Triangle.
+              I am based in Maryville, Tennessee, and will relocate to Cary when
+              I accept a role. I am open to remote work and hybrid roles in the
+              Triangle.
             </p>
           </div>
         </div>
