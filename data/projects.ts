@@ -60,10 +60,6 @@ export const featuredProjects: Project[] = [
         label: "GitHub",
         href: "https://github.com/BMcCarthy96/enterprise-ai-implementation-workbench",
       },
-      {
-        label: "Case Study",
-        href: "https://github.com/BMcCarthy96/enterprise-ai-implementation-workbench/blob/main/docs/case-study.md",
-      },
     ],
     note: "The demo uses seeded synthetic data and fixed test cases.",
     loginHint: "Start the seeded demo from the landing page, no account needed",
@@ -108,10 +104,6 @@ export const featuredProjects: Project[] = [
       {
         label: "GitHub",
         href: "https://github.com/BMcCarthy96/pulse",
-      },
-      {
-        label: "Verified CI",
-        href: "https://github.com/BMcCarthy96/pulse/actions/runs/31920943916",
       },
     ],
     note: "The demo uses synthetic healthcare data and simulated connectors.",
