@@ -2,9 +2,9 @@ const roles = [
   {
     title: "AI Trainer (Contract)",
     org: "micro1",
-    dates: "Jul 2026 – Present · Remote",
+    dates: "Jul 2026 - Aug 2026 · Remote",
     summary:
-      "I review AI responses against each project's instructions and scoring guide. My feedback points to the exact issue, and I flag requirements that are unclear or missing.",
+      "I evaluated AI responses against project instructions and scoring guides. My feedback identified instruction-following failures, quality gaps, and edge cases, and I flagged requirements that could lead to inconsistent scoring.",
   },
   {
     title: "Production Specialist / Transcriptionist",
@@ -26,17 +26,17 @@ const education = [
   {
     name: "East Tennessee State University",
     detail: "B.S. Biology · Psychology minor · GPA 3.2",
-    dates: "May 2018",
+    dates: "Aug 2014 - May 2018",
   },
   {
     name: "App Academy",
     detail: "Full Stack Web Development Bootcamp",
-    dates: "May 2025",
+    dates: "Mar 2024 - May 2025",
   },
   {
     name: "Hack Reactor",
     detail: "Full Stack Web Development Bootcamp",
-    dates: "Oct 2023",
+    dates: "Jun 2023 - Oct 2023",
   },
   {
     name: "Coursera",
