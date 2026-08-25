@@ -52,16 +52,21 @@ export const featuredProjects: Project[] = [
     ],
     links: [
       {
-        label: "Case Study",
-        href: "https://github.com/BMcCarthy96/enterprise-ai-implementation-workbench/blob/main/docs/case-study.md",
+        label: "Live Demo",
+        href: "https://enterprise-ai-implementation-workbe.vercel.app/",
         primary: true,
       },
       {
         label: "GitHub",
         href: "https://github.com/BMcCarthy96/enterprise-ai-implementation-workbench",
       },
+      {
+        label: "Case Study",
+        href: "https://github.com/BMcCarthy96/enterprise-ai-implementation-workbench/blob/main/docs/case-study.md",
+      },
     ],
     note: "The demo uses seeded synthetic data and fixed test cases.",
+    loginHint: "Start the seeded demo from the landing page, no account needed",
     image: {
       src: "/projects/enterprise-workbench.png",
       alt: "Workbench demo showing project requirements, a draft plan, and the approval step",
@@ -96,9 +101,13 @@ export const featuredProjects: Project[] = [
     ],
     links: [
       {
+        label: "Live Demo",
+        href: "https://pulse-live-demo.vercel.app/demo",
+        primary: true,
+      },
+      {
         label: "GitHub",
         href: "https://github.com/BMcCarthy96/pulse",
-        primary: true,
       },
       {
         label: "Verified CI",
@@ -106,6 +115,7 @@ export const featuredProjects: Project[] = [
       },
     ],
     note: "The demo uses synthetic healthcare data and simulated connectors.",
+    loginHint: "Launch the interactive demo, no credentials needed",
     image: {
       src: "/projects/pulse-recruiter-landing.png",
       alt: "Pulse demo showing simulated healthcare connections, an incident, and the recovery approval",
