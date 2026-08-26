@@ -200,7 +200,7 @@ export const additionalProjects: AdditionalProject[] = [
     description:
       "DoseWise reads a supplement label and builds a source-grounded report from NIH DSLD, PubMed, and openFDA. It separates evidence completeness from safety conclusions and clearly marks unknowns.",
     links: [
-      { label: "Live Demo", href: "https://dose-wise-beta.vercel.app" },
+      { label: "Live", href: "https://dose-wise-beta.vercel.app" },
       { label: "GitHub", href: "https://github.com/BMcCarthy96/DoseWise" },
     ],
   },
