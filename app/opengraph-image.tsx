@@ -42,7 +42,6 @@ export default function OpenGraphImage() {
             background: "#111827",
           }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={`${siteUrl}/projects/enterprise-workbench.png`}
             alt=""
@@ -66,7 +65,6 @@ export default function OpenGraphImage() {
             background: "#111827",
           }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={`${siteUrl}/projects/pulse-recruiter-landing.png`}
             alt=""
