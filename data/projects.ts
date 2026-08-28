@@ -149,10 +149,6 @@ export const featuredProjects: Project[] = [
         primary: true,
       },
       {
-        label: "Technical Proof",
-        href: "https://healthcare-intake-ai.vercel.app/proof",
-      },
-      {
         label: "GitHub",
         href: "https://github.com/BMcCarthy96/healthcare-intake-ai",
       },
