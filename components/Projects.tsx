@@ -10,8 +10,12 @@ export function Projects() {
           Featured Projects
         </h2>
         <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+          {featuredProjects.map((project, index) => (
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              eagerImage={index === 0}
+            />
           ))}
         </div>
 

@@ -125,9 +125,9 @@ export const featuredProjects: Project[] = [
       "A reviewer correction creates a versioned extraction, approval gates the export, and a controlled 429 demonstrates a same-key retry with a signed downstream request.",
     ],
     proof: [
-      "120 locked evaluation cases",
+      "120 synthetic evaluation cases",
+      "40-case locked challenge",
       "0 false-ready cases",
-      "5-scenario guided demo",
     ],
     chips: [
       "FastAPI",
