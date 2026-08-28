@@ -2,7 +2,13 @@ import Image from "next/image";
 import type { Project } from "@/data/projects";
 import { ExternalLinkIcon } from "@/components/icons";
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({
+  project,
+  eagerImage = false,
+}: {
+  project: Project;
+  eagerImage?: boolean;
+}) {
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#0d1428]/80 shadow-lg shadow-black/20">
       <div className="relative aspect-[16/10] w-full border-b border-white/10 bg-white/5">
@@ -12,6 +18,7 @@ export function ProjectCard({ project }: { project: Project }) {
             alt={project.image.alt}
             fill
             sizes="(min-width: 1024px) 480px, 100vw"
+            loading={eagerImage ? "eager" : "lazy"}
             className="object-cover object-top"
           />
         ) : (

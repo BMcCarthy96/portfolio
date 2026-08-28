@@ -118,26 +118,39 @@ export const featuredProjects: Project[] = [
     label: "AI Document Workflow · Healthcare",
     name: "IntakeFlow",
     tagline:
-      "IntakeFlow reads a synthetic intake packet and shows the page behind each field. Unclear cases go to a reviewer.",
+      "IntakeFlow turns an adversarial healthcare intake packet into a page-grounded, reviewer-approved, retry-safe export.",
     bullets: [
-      "The model extracts fields from a PDF and returns the source page with each value. The demo can use a fixed local model response or Claude.",
-      "Application code decides where the case goes. Missing fields, contradictions, and text that looks like a prompt injection send the case to review.",
-      "Processing and export are safe to retry. Every status change is recorded. The evaluation set has 60 synthetic packets.",
+      "A 90-second guided walkthrough seeds five isolated synthetic scenarios, then follows one contradictory packet from the operations queue through evidence review and export.",
+      "The model proposes fields with page-level evidence. Deterministic policy blocks missing or contradictory data and treats instructions found inside uploaded documents as untrusted content.",
+      "A reviewer correction creates a versioned extraction, approval gates the export, and a controlled 429 demonstrates a same-key retry with a signed downstream request.",
+    ],
+    proof: [
+      "120 synthetic evaluation cases",
+      "40-case locked challenge",
+      "0 false-ready cases",
     ],
     chips: [
       "FastAPI",
       "Python",
       "Next.js",
       "TypeScript",
+      "PostgreSQL",
       "SQLAlchemy",
+      "Redis",
+      "S3",
       "Claude API",
       "pytest",
+      "Playwright",
     ],
     links: [
       {
         label: "Live Demo",
-        href: "https://healthcare-intake-ai.vercel.app",
+        href: "https://healthcare-intake-ai.vercel.app/demo",
         primary: true,
+      },
+      {
+        label: "Technical Proof",
+        href: "https://healthcare-intake-ai.vercel.app/proof",
       },
       {
         label: "GitHub",
@@ -145,7 +158,7 @@ export const featuredProjects: Project[] = [
       },
     ],
     note: "The demo uses synthetic data. Clinical decisions stay outside the project.",
-    loginHint: "Click \"Load a complete synthetic demo\", no signup needed",
+    loginHint: "Start the guided walkthrough, no account needed",
     image: {
       src: "/projects/healthcare-intake-workspace.png",
       alt: "IntakeFlow case workspace: extracted fields with page-level evidence and the reviewer approval gate",
