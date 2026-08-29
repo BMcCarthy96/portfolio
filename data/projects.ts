@@ -183,7 +183,7 @@ export const featuredProjects: Project[] = [
     links: [
       {
         label: "Live Demo",
-        href: "https://stockyard.onrender.com",
+        href: "https://stockyard-live-demo.vercel.app/",
         primary: true,
       },
       { label: "GitHub", href: "https://github.com/BMcCarthy96/StockYard" },
