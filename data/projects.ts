@@ -80,7 +80,7 @@ export const featuredProjects: Project[] = [
       "A reviewer approves recovery. Pulse checks the target again at that point. Incoming events use HMAC signatures, duplicate events are ignored, and queued jobs follow Retry-After responses.",
     ],
     proof: [
-      "274 automated tests",
+      "314 automated tests",
       "19 evaluation fixtures",
       "4 simulated connectors",
     ],
@@ -145,7 +145,7 @@ export const featuredProjects: Project[] = [
     links: [
       {
         label: "Live Demo",
-        href: "https://healthcare-intake-ai.vercel.app/demo",
+        href: "https://healthcare-intake-ai.vercel.app/",
         primary: true,
       },
       {
