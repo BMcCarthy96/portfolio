@@ -4,7 +4,7 @@ export const site = {
   tagline:
     "I build full-stack and applied AI systems that connect models to documents, APIs, and operational workflows, with source evidence and clear human review.",
   stats: [
-    "274 automated tests in Pulse",
+    "314 automated tests in Pulse",
     "15-case × 3-variant Workbench evaluation matrix",
     "5+ years in healthcare documentation",
   ],

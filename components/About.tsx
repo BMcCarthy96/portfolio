@@ -20,7 +20,7 @@ export function About() {
               connections and shows the evidence behind each finding.
             </p>
             <p>
-              During a 2026 contract with micro1, I evaluated AI responses
+              During my recent contract with micro1, I evaluated AI responses
               against detailed rubrics and wrote targeted feedback for model
               training. More than five years in healthcare documentation taught
               me to verify details against the source, protect private

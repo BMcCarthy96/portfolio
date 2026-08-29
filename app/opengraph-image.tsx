@@ -87,7 +87,7 @@ export default function OpenGraphImage() {
           fontSize: 21,
         }}
       >
-        <div style={{ display: "flex" }}>274 automated tests in Pulse</div>
+        <div style={{ display: "flex" }}>314 automated tests in Pulse</div>
         <div style={{ display: "flex" }}>
           15 cases × 3 Workbench prompt versions
         </div>
